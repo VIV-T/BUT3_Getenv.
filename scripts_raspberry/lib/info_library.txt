@@ -1,0 +1,5 @@
+Version 1
+Date : 22/10/2024
+
+Dans ce dossier se trouve toutes les librairies à utiliser
+pour le développement de la passerelle.

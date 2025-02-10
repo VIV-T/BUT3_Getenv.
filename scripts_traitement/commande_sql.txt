@@ -1,0 +1,63 @@
+CREATE TABLE temperature(
+		rpi_id VARCHAR(10),
+		temperature NUMERIC,
+		timestamp timestamp default current_timestamp
+);
+
+CREATE TABLE humidity(
+		rpi_id VARCHAR(10),
+		humidity NUMERIC,
+		timestamp timestamp default current_timestamp
+);
+
+CREATE TABLE noise(
+		rpi_id VARCHAR(10),
+		noise NUMERIC,
+		timestamp timestamp default current_timestamp
+);
+CREATE TABLE isPeopleDetected(
+		rpi_id VARCHAR(10),
+		isPeopleDetected BOOLEAN,
+		timestamp timestamp default current_timestamp
+);
+
+CREATE TABLE TVoC(
+		rpi_id VARCHAR(10),
+		TVoC NUMERIC,
+		timestamp timestamp default current_timestamp
+);
+
+CREATE TABLE CO2eq(
+		rpi_id VARCHAR(10),
+		CO2eq NUMERIC,
+		timestamp timestamp default current_timestamp
+);
+
+CREATE TABLE alerte_aeration(
+		rpi_id VARCHAR(10),
+		alerte_aeration BOOLEAN,
+		timestamp timestamp default current_timestamp
+);
+
+CREATE TABLE alerte_intrusion(
+		rpi_id VARCHAR(10),
+		alerte_intrusion BOOLEAN,
+		timestamp timestamp default current_timestamp
+);
+
+CREATE TABLE alerte_incendie(
+		rpi_id VARCHAR(10),
+		alerte_incendie BOOLEAN,
+		timestamp timestamp default current_timestamp
+);
+
+CREATE TABLE nb_visages(
+		rpi_id VARCHAR(10),
+		nb_visages  NUMERIC,
+		timestamp timestamp default current_timestamp
+);
+
+
+
+# requete de suppression des tables 
+DROP TABLE alerte_incendie, alerte_aeration,alerte_intrusion, co2eq, tvoc, humidity, temperature, noise, nb_visages, ispeopledetected;
